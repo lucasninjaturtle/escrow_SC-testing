@@ -11,3 +11,8 @@
 Forge also supports Hardhat-style projects where dependencies are npm packages (stored in node_modules) and contracts are stored in contracts as opposed to src.
 
 To enable Hardhat compatibility mode pass the --hh flag.
+
+## CHEATSHEET
+
+// Deploy PobEscrowTest.sol
+source .env && forge create src/PobEscrowTest.sol:PobEscrowTest --rpc-url $BOMBAI_RPC_URL --private-key $PRIVATE_KEY_DEPLOYER
